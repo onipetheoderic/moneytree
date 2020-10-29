@@ -1,0 +1,1 @@
+03:00	Alajuelense vs ADR Jicaral	COSTA RICA: Primera Division - Apertura - Round 11
