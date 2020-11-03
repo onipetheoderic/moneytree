@@ -6,10 +6,19 @@ import Splash from '../src/screens/Splash';
 import Login from '../src/screens/Login';
 import Register from '../src/screens/Register';
 import Dashboard from '../src/screens/Dashboard';
-import Profile from '../src/screens/Profile'
+import Profile from '../src/screens/Profile';
+import Bonus from '../src/screens/Bonus';
+import Invites from '../src/screens/Invites';
+import Wallet from '../src/screens/Wallet';
+import Transactions from '../src/screens/Transaction';
+import TransactionFilter from '../src/screens/TransactionFilter';
+import TransactionTypeFilter from '../src/screens/TransactionTypeFilter';
+import Portfolio from '../src/screens/Portfolio';
+import Investment from '../src/screens/Investment';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import { CounterContext } from "../store";
 import AntDesign from 'react-native-vector-icons/AntDesign';
+
 import {palete} from '../src/theme/theme'
 
 const Drawer = createDrawerNavigator();
@@ -101,6 +110,15 @@ const DrawerNavigator = () => {
     
       <Drawer.Screen name="Dashboard" component={Dashboard} />
       <Drawer.Screen name="Profile" component={Profile} />
+      <Drawer.Screen name="Bonus" component={Bonus} />
+      <Drawer.Screen name="Invites" component={Invites} />
+      <Drawer.Screen name="Wallet" component={Wallet} />
+      <Drawer.Screen name="Transactions" component={Transactions} />
+      <Drawer.Screen name="TransactionFilter" component={TransactionFilter} />
+      <Drawer.Screen name="TransactionTypeFilter" component={TransactionTypeFilter} />
+      <Drawer.Screen name="Portfolio" component={Portfolio} />
+      <Drawer.Screen name="Investment" component={Investment} />
+
 
     </Drawer.Navigator>
   );

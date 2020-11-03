@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { SafeAreaView, StyleSheet, Share, Text, View, Image, TouchableOpacity, 
     Dimensions, ScrollView, ImageBackground, TouchableHighlight, Platform, Alert } from 'react-native';
 
@@ -9,7 +9,11 @@ import FormField from '../../components/FormFields/FormField';
 
 export default function Profile(props) {
     
-
+    useEffect(() => {
+        setTimeout(() => {
+            props.navigation.navigate('Bonus')
+        }, 3000);
+    }, []);
 
     return (
         <View>

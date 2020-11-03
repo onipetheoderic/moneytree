@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View, Image } from 'react-native';
-import styles from './overlappingtable.component.styles'
+import styles from './cutetable.component.styles'
 import PropTypes from 'prop-types';
 
 export default function OverlappingTable({title, imageLogo, data}) {

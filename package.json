@@ -29,6 +29,7 @@
     "faker": "^5.1.0",
     "google-translate-api": "^2.3.0",
     "native-base": "^2.13.13",
+    "radio-buttons-react-native": "^1.0.4",
     "react": "~16.11.0",
     "react-dom": "~16.11.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
@@ -64,7 +65,8 @@
     "react-native-web": "~0.11.7",
     "react-navigation": "^4.4.0",
     "react-navigation-drawer": "^2.5.0",
-    "react-navigation-stack": "^2.8.2"
+    "react-navigation-stack": "^2.8.2",
+    "use-state-with-callback": "^2.0.3"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0"

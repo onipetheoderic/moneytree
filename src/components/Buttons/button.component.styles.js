@@ -13,6 +13,7 @@ export default StyleSheet.create({
     },
     titleText: {
         fontSize: 15,
-        color:'white'
+        color:'white',
+        fontFamily:'Poppins_500Medium',
     }
 })

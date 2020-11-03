@@ -2,9 +2,33 @@ import { StyleSheet } from 'react-native';
 import {palete} from '../../theme/theme'
 
 export default StyleSheet.create({
+    subView: {
+        backgroundColor:palete.BritishRacingGreen,
+        height:90,
+        width:'100%',
+        alignItems:'center',
+       
+    },
+    bigText: {
+        fontSize: 40,
+        color:'white'
+    },  
+    body: {
+alignSelf:'center'
+    },
+    subTextSmall: {
+        fontSize: 10,
+        color: 'white'
+    },
     container: {
         width:'100%',
-       
+    },
+    subContainerPlain: {
+        backgroundColor:palete.BritishRacingGreen,
+        height:110,
+        justifyContent:'center',
+        flexDirection:'row',
+        alignItems:'flex-end'
     },
     subContainer: {
         backgroundColor:palete.BritishRacingGreen,
@@ -13,11 +37,7 @@ export default StyleSheet.create({
         flexDirection:'row',
         alignItems:'center'
     },
-    nameZone: {
-        marginTop:45,
-        alignItems:'center',
-        marginBottom:10
-    },
+ 
     text2:{
         color: palete.PureBlack,
         fontFamily:'Poppins_500Medium',
@@ -73,5 +93,11 @@ export default StyleSheet.create({
         marginTop:5,
         fontSize:22,
         marginLeft:15,
+    },
+    iconStyle2: {
+        color:'white',
+        marginTop:5,
+        fontSize:22,
+        marginRight:15,
     }
 })
