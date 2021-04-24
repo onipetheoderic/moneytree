@@ -11,10 +11,20 @@ export default StyleSheet.create({
         width:230,
         resizeMode:'contain'
     },
+    imageIcon: {
+        width:15.26,
+        height:13.99,
+        resizeMode: 'contain',
+    },
+    imageIcon2: {
+        width:12.5,
+        height:14.99,
+        resizeMode: 'contain',
+    },
     forgotPassword: {
         fontFamily:'Poppins_500Medium',
         fontSize:10,
-        marginTop:-10,
+        marginTop:10,
         alignSelf:'flex-end',
         marginRight:16,
         color: palete.DirtyBrown

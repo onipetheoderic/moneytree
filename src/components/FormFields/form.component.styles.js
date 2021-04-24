@@ -24,9 +24,11 @@ elevation: 10,
         fontFamily:'Poppins_500Medium',
         height: 40, 
         marginLeft:14,
-
-        
-         
+    },
+    optionsMenuCont: {
+        width:'100%',
+        zIndex:100,
+        backgroundColor:'white'
     },
     containerFilter: {
         marginTop:20,
@@ -34,6 +36,19 @@ elevation: 10,
         flexDirection:'row',
         width:'88%', 
         alignSelf:'center'
+    },
+    selectBox: {
+        width:'100%',
+        height:40,
+        alignItems:'center',
+        justifyContent:'center',
+        marginVertical:4,
+        backgroundColor:'#0000001C',
+    },
+    selectText: {
+        fontFamily:'Poppins_500Medium',
+        fontSize:12,
+        color: palete.DirtyBrown,
     },
     clearTextStyle: {
         fontFamily:'Poppins_500Medium',
@@ -56,6 +71,13 @@ elevation: 10,
     width:'88%', 
     height:53
    },
+   formPortion2:{
+    zIndex:10,
+    marginLeft:'auto', 
+    width:'88%', 
+    height:56,
+    justifyContent:'center'
+   },
     container: {
         alignSelf: 'center',
         backgroundColor:'#0000001C',
@@ -69,16 +91,27 @@ elevation: 10,
         width:14,
         height:10
     },
+  
     typeCont: {
        marginLeft:10,
        marginTop:23
     },
+    typeContSelect: {
+        marginRight:10,
+        alignSelf:'center'
+     },
     label: {
         fontFamily:'Poppins_500Medium',
         fontSize:10,
         color: palete.BritishRacingGreen,
         marginTop:10,
         marginLeft:4,
+    },
+    labelSelect: {
+        fontFamily:'Poppins_500Medium',
+        fontSize:10,
+        marginLeft:10,
+      
     },
     textInput: {
         marginTop:-13, 

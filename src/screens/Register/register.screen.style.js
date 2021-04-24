@@ -6,10 +6,20 @@ export default StyleSheet.create({
         marginTop:40,
         alignItems:'center'
     },
+    imageIcon: {
+        width:15.26,
+        height:13.99,
+        resizeMode: 'contain',
+    },
     image: {
         height:80,
         width:141,
         resizeMode:'contain'
+    },
+    imageIcon2: {
+        width:12.5,
+        height:14.99,
+        resizeMode: 'contain',
     },
     forgotPassword: {
         fontFamily:'Poppins_500Medium',

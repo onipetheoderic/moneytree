@@ -2,30 +2,34 @@ import React from 'react';
 import { SafeAreaView, StyleSheet, Share, Text, View, Image, TouchableOpacity, 
     Dimensions, ScrollView, ImageBackground, TextInput, TouchableHighlight, Platform, Alert } from 'react-native';
 
+import Feather from 'react-native-vector-icons/Feather';
 import styles from './form.component.styles';
-import email from '../../../assets/images/email.png'
 
-export default function FormFields({placeholder, secure, disabled}) {
-    const [value, onChangeText] = React.useState('');
+
+export default function FormFields({icon, keyboardType, value, placeholder, handleForm, name, marginVertical, secure, disabled, label, editable}) {
+   
     const displayOnly = disabled ? '100%' : '90%'
-    const displayOnlyMargin = disabled ? 5 : 15
+    const displayOnlyMargin = disabled ? 5 : 6
+    const [show, changeShow] = React.useState(secure)
+    let showEyes = secure==true ? true : false
+    let logoDisplay = show ? "eye-off" : "eye"
+
+   
     return (
-        <View style={[styles.container,{width:displayOnly,  marginVertical:displayOnlyMargin,}]}>
+        <View style={[styles.container,{width:displayOnly}]}>
             <View style={styles.typeCont}>
-                <Image
-                    source={email} 
-                    style={styles.image}
-                />
+               {icon}
             </View>
             <View style={styles.formPortion}>
-                <Text style={styles.label}>Label</Text>
+                <Text style={styles.label}>{label}</Text>
                 <TextInput
                 style={styles.textInput}
-                onChangeText={text => onChangeText(text)}
+                onChangeText={text => handleForm(name,text)}
+                secureTextEntry={show}
                 value={value}
                 placeholder={placeholder}
-                secureTextEntry={true}
                 placeholderTextColor='#000000'
+                keyboardType={keyboardType}
                 />
             </View>
             
